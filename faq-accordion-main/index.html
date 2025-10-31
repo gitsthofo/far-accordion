@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<link rel="stylesheet" href="faqs.css">  
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="work-sans size"> 
+<main class="faqs-wrapper">
+                  
+        <header class="welcome-note">
+          <img src="./assets/images/icon-star.svg" alt="star image"><h1>FAQs</h1>
+            </header>
+
+                <article class="main-container">
+        
+                  <div class="container">
+                        <button id="toggle-btn" class="btn main-btn size  bg-white fw-700"><h2 class="fw-600"> is Frontend Mentor, and how will it help me?</h2></button>
+                        <div class="btn-wraper">
+                                <img id="toggle-image" onclick="toggleImage()" alt="plus" src="/faq-accordion-main/assets/images/icon-plus.svg">
+                                <img style="display: none;" onclick="toggleImage()" onclick="toggleImage()" alt="minus" src="/assets/images/icon-minus.svg">
+                          </div>
+                     </div>
+                  <p id="menu" class="menu fw-700"> Frontend Mentor offers realistic coding challenges to help developers improve their 
+                  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+                  all levels and ideal for portfolio building.</p>
+                </article>
+
+                        <article>
+                          <div class="container">
+                                  <button id="toggle-btn" class="btn bg-white  main-btn size fw-700"><h2>Is Frontend Mentor free?</h2></button>
+                                  <div class="btn-wraper">
+                                    <img  id="plus" alt="plus" src="./assets/images/icon-plus.svg">
+                                    <img style="display: none;"   alt="minus" src="./assets/images/icon-minus.svg">
+                                    </div>
+                           </div>   
+                            <p id="menu" class="hidden fw-700">Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+                            option providing access to a range of projects suitable for all skill levels.</p>
+                                  
+                  
+                        </article>
+                        <article>
+                            <div class="container">
+                                  <button  class="btn bg-white main-btn size fw-700"><h2>Can I use Frontend Mentor projects in my portfolio?</h2></button>
+                                      <div class="btn-wraper">
+                                        <img alt="plus" src="./assets/images/icon-plus.svg">
+                                        <img style="display: none;" alt="minus" src="./assets/images/icon-minus.svg">
+                                      </div>  
+                              </div>
+                                <p id="menu" class="hidden fw-700">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+                                  way to showcase your skills to potential employers!</p>
+                                
+                        </article> 
+                        <article>                         
+                                  <div class="container">
+                                        <button class="toggle-btn bg-white main-btn size fw-700"><h2>How can I get help if I'm stuck on a Frontend Mentor challenge?</h2></button>
+                                            <div class="btn-wraper">
+                                              <img alt="plus" src="./assets/images/icon-plus.svg">
+                                              <img style="display: none;"  alt="minus" src="./assets/images/icon-minus.svg">
+                                              </div>
+                                  </div>
+                        
+                                  <p id="menu" class="hidden fw-700">The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+                                  channel where you can ask questions and seek support from other community members.</p>
+                              
+                        </article>
+                      
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gitsthofo</a>.
+  </div>
+  <script src="faqs.js"></script>
+</body>
+</html>

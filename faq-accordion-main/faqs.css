@@ -1,0 +1,210 @@
+
+
+/*    Custom properties   */
+
+:root {
+    /*
+- Mobile: 375px
+- Desktop: 1440px */
+
+    /*     Color    */
+
+    --white: 0, 100%, 100%;
+    --purple-100: 275, 100%, 97%;
+    --purple-600: 292, 16%, 49%;
+    --purple-950: 292, 42%, 14%;
+
+          /*    font weight   */
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+
+     /*  font face  */
+     --fs: 0.5rem;
+
+}
+/*---- box sizing ----*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;}
+                                            /**************************/
+                                             /*    Margin reset    */
+                                             /*************************/
+html {
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture {
+    margin: 0;
+}
+:is( h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture){
+    max-inline-size: initial;
+    block-size: auto;
+    margin-block-start: 1rem;
+
+}
+                /*---------make image easier to work with-----*/
+img,
+picture {
+    max-inline-size: 100%;
+    block-size: auto;
+    max-width: 100%;
+    display: block;
+}
+
+
+                    /**************************/
+                    /*    Utility classes    */
+                    /**************************/
+
+                    /* Colors text */
+              
+         .size { font-size: var(--fs);}           
+
+    .white {color: hsl(var(--white)); }
+    .bg-white { background-color: hsl(var(--white))}
+    
+    .purple-100 { color: hsl(var(--purple-100));}
+    .bg-purple-100  { background-color: hsl(var(--purple-100));}
+
+    .purple-600 { color: hsl(var(--purple-600));}
+    .bg-purple-600 { background-color: hsl(var(--purple-600));}
+    
+    .purple-950 { color: hsl(var(--purple-950));}
+    .bg-purple-950 { background-color: hsl(var(--purple-950));}
+
+                   /* Font weight */
+
+    .fw-400 { font-weight: var(--fw-400);}
+    .fw-400 { font-weight: var(--fw-600);}
+    .fw-600 { font-weight: var(--fw-700); }
+
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+
+                    /**************************/
+                    /*    General styles     */
+                    /**************************/
+
+@media (width <= 2440px) {
+  
+  
+.faqs-wrapper {
+    position: relative;
+    top: 3rem;
+    
+ 
+}
+}
+
+
+@media (width = 425px) {
+
+body {
+    margin: auto;
+    text-align: center;
+    background-image: url(/assets/images/background-pattern-mobile.svg);
+}
+
+ 
+}
+
+
+   body {
+    background: hsl(var(--purple-100));
+    padding: 1rem;
+    margin: auto;
+    min-height: 100vh;
+    place-items: center;
+    background-image: url(/assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+
+    
+
+   }                 
+
+ 
+   main {
+    border-radius: 1vw;
+    padding-inline: 1rem;
+    background-color: hsl(var(--white));
+    max-width: 620px;
+    margin: auto;
+    margin-inline: 1rem; 
+    text-align: center;
+    position: relative;
+    bottom: 1rem;
+    min-height: 350px;
+   
+  
+   }
+
+   article > p{
+    text-align: left;
+   }
+    
+   .welcome-note {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   
+   }
+
+
+   .welcome-note h1{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 2rem;
+   }
+   .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+   }
+.container > button:hover {
+    color: rgb(174, 17, 236);
+    transition: 0.3s;
+}
+   .main-btn{
+    border: none;
+    text-align: left;
+    
+   }
+   .btn-wraper{
+    display: flex;
+    vertical-align: center;
+  
+   }
+
+
+   .menu.show{
+    display: block;
+   }
+
+   .menu{
+    transition: 3s;
+    display: none;
+   }
+
+  
